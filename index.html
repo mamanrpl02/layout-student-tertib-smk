@@ -41,16 +41,16 @@
           class="hidden md:block bg-white w-64 p-4 border-r overflow-y-auto"
         >
           <nav class="space-y-2">
-            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-200"
+            <a href="/" class="block px-3 py-2 rounded hover:bg-gray-200"
               ><i class="bi bi-house-fill"></i> Beranda</a
             >
-            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-200"
+            <a href="riwayat.html" class="block px-3 py-2 rounded hover:bg-gray-200"
               ><i class="bi bi-bookmark-fill"></i> Riwayat</a
             >
-            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-200"
+            <a href="peringkat.html" class="block px-3 py-2 rounded hover:bg-gray-200"
               ><i class="bi bi-bar-chart-fill"></i> Peringkat</a
             >
-            <a href="#" class="block px-3 py-2 rounded hover:bg-gray-200"
+            <a href="tatatertib.html" class="block px-3 py-2 rounded hover:bg-gray-200"
               ><i class="bi bi-journal-bookmark-fill"></i> Tata Tertib</a
             >
             <a href="#" class="block px-3 py-2 rounded hover:bg-gray-200"
@@ -219,27 +219,54 @@
     </div>
 
     <!-- Bottom Navigation (hanya mobile) -->
+    <!-- Bottom Bar (HP) -->
     <nav
-      class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg"
+      class="fixed bottom-0 left-0 w-full bg-white border-t shadow-inner flex justify-around items-center py-2 lg:hidden z-50"
     >
-      <div class="flex justify-around py-2">
-        <a href="#" class="flex flex-col items-center text-blue-600">
-          <span>🏠</span>
-          <span class="text-xs">Home</span>
-        </a>
-        <a href="#" class="flex flex-col items-center text-gray-600">
-          <span>📦</span>
-          <span class="text-xs">Products</span>
-        </a>
-        <a href="#" class="flex flex-col items-center text-gray-600">
-          <span>👥</span>
-          <span class="text-xs">Users</span>
-        </a>
-        <a href="#" class="flex flex-col items-center text-gray-600">
-          <span>⚙️</span>
-          <span class="text-xs">Settings</span>
-        </a>
-      </div>
+      <!-- Beranda -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-house-fill text-xl"></i>
+        <span class="text-xs">Beranda</span>
+      </a>
+
+      <!-- Riwayat -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-bookmark-fill text-xl"></i>
+        <span class="text-xs">Riwayat</span>
+      </a>
+
+      <!-- Peringkat -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-bar-chart-fill text-xl"></i>
+        <span class="text-xs">Peringkat</span>
+      </a>
+
+      <!-- Tata Tertib -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-journal-bookmark-fill text-xl"></i>
+        <span class="text-xs">Tata Tertib</span>
+      </a>
+
+      <!-- Saya -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-person-fill text-xl"></i>
+        <span class="text-xs">Saya</span>
+      </a>
     </nav>
   </body>
 </html>
