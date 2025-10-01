@@ -20,7 +20,7 @@
         <span class="font-bold text-lg">Tertib SMK</span>
 
         <div class="hidden md:block w-1/2">
-          <span class="font-bold text-lg">Profil </span>
+          <span class="font-bold text-lg">Peringkat </span>
         </div>
 
         <!-- Profile -->
@@ -70,8 +70,9 @@
         </aside>
 
         <!-- Main content -->
+        <!-- Main content -->
         <main
-          class="flex-1 overflow-y-auto p-6 space-y-4 pb-48 relative"
+          class="flex-1 overflow-y-auto p-6 space-y-4 relative pb-48"
           id="mainContent"
         >
           <!-- Header -->
@@ -79,95 +80,150 @@
             <h2 class="text-xl font-bold">Profil Saya</h2>
           </div>
 
-          <!-- Cards -->
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <!-- Poin Positif -->
-            <div
-              class="bg-white p-4 rounded-lg shadow flex flex-col items-center"
-            >
-              <i class="bi bi-hand-thumbs-up text-2xl text-green-500"></i>
-              <p class="mt-2 font-semibold text-lg">50</p>
-              <p class="text-sm text-gray-500">Poin Positif</p>
+          <!-- Form Profil -->
+          <form class="space-y-6 bg-white p-6 rounded-lg shadow">
+            <!-- Nama -->
+            <div>
+              <label
+                for="nama"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Nama Lengkap
+              </label>
+              <input
+                type="text"
+                id="nama"
+                value="Maman RPL"
+                readonly
+                class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700"
+              />
             </div>
 
-            <!-- Poin Negatif -->
-            <div
-              class="bg-white p-4 rounded-lg shadow flex flex-col items-center"
-            >
-              <i class="bi bi-hand-thumbs-down text-2xl text-red-500"></i>
-              <p class="mt-2 font-semibold text-lg">30</p>
-              <p class="text-sm text-gray-500">Poin Negatif</p>
+            <!-- Email -->
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                value="maman@example.com"
+                readonly
+                class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700"
+              />
             </div>
 
-            <!-- Sisa Toleransi -->
-            <div
-              class="bg-white p-4 rounded-lg shadow flex flex-col items-center"
-            >
-              <i class="bi bi-shield-check text-2xl text-yellow-500"></i>
-              <p class="mt-2 font-semibold text-lg">20</p>
-              <p class="text-sm text-gray-500">Sisa Toleransi</p>
+            <!-- Jenis Kelamin -->
+            <div>
+              <label
+                for="gender"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Jenis Kelamin
+              </label>
+              <input
+                type="text"
+                id="gender"
+                value="Laki-laki"
+                readonly
+                class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700"
+              />
             </div>
 
-            <!-- Jumlah Laporan -->
-            <div
-              class="bg-white p-4 rounded-lg shadow flex flex-col items-center"
-            >
-              <i class="bi bi-file-earmark-text text-2xl text-blue-500"></i>
-              <p class="mt-2 font-semibold text-lg">5</p>
-              <p class="text-sm text-gray-500">Jumlah Laporan</p>
+            <!-- Wali Kelas -->
+            <div>
+              <label
+                for="walikelas"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Wali Kelas
+              </label>
+              <input
+                type="text"
+                id="walikelas"
+                value="Bu Siti"
+                readonly
+                class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700"
+              />
             </div>
-          </div>
 
-          <!-- Menu Bawah -->
-          <div class="mt-6 space-y-3">
-            <!-- Laporkan Siswa -->
-            <a
-              href="laporkan-siswa.html"
-              class="flex items-center justify-between bg-white p-4 rounded-lg shadow hover:bg-gray-50 transition"
-            >
-              <div class="flex items-center gap-3">
-                <i class="bi bi-exclamation-circle text-xl text-blue-500"></i>
-                <span class="font-medium">Laporkan Siswa</span>
+            <!-- Kelas & Jurusan (flex) -->
+            <div class="flex gap-4">
+              <div class="flex-1">
+                <label
+                  for="kelas"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Kelas
+                </label>
+                <input
+                  type="text"
+                  id="kelas"
+                  value="XII RPL B"
+                  readonly
+                  class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700"
+                />
               </div>
-              <i class="bi bi-chevron-right text-gray-400"></i>
-            </a>
+              <div class="flex-1">
+                <label
+                  for="jurusan"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Jurusan
+                </label>
+                <input
+                  type="text"
+                  id="jurusan"
+                  value="Rekayasa Perangkat Lunak"
+                  readonly
+                  class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700"
+                />
+              </div>
+            </div>
 
-            <!-- Riwayat Poin -->
-            <a
-              href="riwayat.html"
-              class="flex items-center justify-between bg-white p-4 rounded-lg shadow hover:bg-gray-50 transition"
-            >
-              <div class="flex items-center gap-3">
-                <i class="bi bi-clock-history text-xl text-green-500"></i>
-                <span class="font-medium">Riwayat Poin</span>
+            <!-- Password -->
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Password
+              </label>
+              <div class="relative">
+                <input
+                  type="password"
+                  id="password"
+                  value="********"
+                  readonly
+                  class="w-full border rounded-lg p-2 bg-gray-100 text-gray-700 pr-10"
+                />
+                <a
+                  href="ubah-password.html"
+                  class="absolute inset-y-0 right-0 flex items-center pr-3 text-blue-600 hover:text-blue-800"
+                >
+                  <i class="bi bi-pencil-square text-lg"></i>
+                </a>
               </div>
-              <i class="bi bi-chevron-right text-gray-400"></i>
-            </a>
+            </div>
 
-            <!-- Tukar Poin -->
-            <a
-              href="#"
-              class="flex items-center justify-between bg-white p-4 rounded-lg shadow hover:bg-gray-50 transition"
-            >
-              <div class="flex items-center gap-3">
-                <i class="bi bi bi-arrow-repeat text-xl text-yellow-500"></i>
-                <span class="font-medium">Tukar Poin</span>
-              </div>
-              <i class="bi bi-chevron-right text-gray-400"></i>
-            </a>
+            <p class="text-gray-500 text-sm text-center">
+              Perubahan mengenai data diatas yang tidak bisa diubah silahkan
+              hubungi wali kelas
+            </p>
 
-            <!-- Pengaturan -->
-            <a
-              href="pengaturan.html"
-              class="flex items-center justify-between bg-white p-4 rounded-lg shadow hover:bg-gray-50 transition"
-            >
-              <div class="flex items-center gap-3">
-                <i class="bi bi-gear text-xl text-gray-500"></i>
-                <span class="font-medium">Pengaturan</span>
-              </div>
-              <i class="bi bi-chevron-right text-gray-400"></i>
-            </a>
-          </div> 
+            <!-- Tombol -->
+            <div class="flex justify-end">
+              <a
+                href="saya.html"
+                class="bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition text-sm"
+              >
+                Kembali
+              </a>
+            </div>
+          </form>
         </main>
 
         <!-- Sidebar kanan -->
