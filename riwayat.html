@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Container utama -->
+    <div class="flex flex-col h-screen">
+      <!-- Topbar -->
+      <header
+        class="flex items-center justify-between bg-white shadow px-6 py-3"
+      >
+        <span class="font-bold text-lg">Tertib SMK</span>
+
+        <div class="hidden md:block w-1/2">
+          <span class="font-bold text-lg">Riwayat</span>
+        </div>
+
+        <!-- Profile -->
+        <div class="flex items-center gap-3">
+          <span class="hidden md:block font-medium">Hello, Maman</span>
+          <img
+            src="https://via.placeholder.com/32"
+            alt="Profile"
+            class="w-8 h-8 rounded-full border"
+          />
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="flex flex-1 overflow-hidden">
+        <!-- Sidebar kiri (hanya desktop) -->
+        <aside
+          class="hidden md:block bg-white w-64 p-4 border-r overflow-y-auto"
+        >
+          <nav class="space-y-2">
+            <a href="index.html" class="block px-3 py-2 rounded hover:bg-gray-200"
+              ><i class="bi bi-house-fill"></i> Beranda</a
+            >
+            <a href="riwayat.html" class="block px-3 py-2 rounded hover:bg-gray-200"
+              ><i class="bi bi-bookmark-fill"></i> Riwayat</a
+            >
+            <a href="peringkat.html" class="block px-3 py-2 rounded hover:bg-gray-200"
+              ><i class="bi bi-bar-chart-fill"></i> Peringkat</a
+            >
+            <a href="tata-tertib.html" class="block px-3 py-2 rounded hover:bg-gray-200"
+              ><i class="bi bi-journal-bookmark-fill"></i> Tata Tertib</a
+            >
+            <a href="saya.html" class="block px-3 py-2 rounded hover:bg-gray-200"
+              ><i class="bi bi-person-fill"></i> Saya</a
+            >
+          </nav>
+        </aside>
+
+        <!-- Main content -->
+        <!-- List Siswa -->
+        <main class="flex-1 overflow-y-auto p-6 space-y-4">
+          <!-- Header + Filter -->
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-semibold">Poin Anda</h2>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-1 text-sm rounded bg-green-100 text-green-700 hover:bg-green-200 transition"
+              >
+                Positif
+              </button>
+              <button
+                class="px-3 py-1 text-sm rounded bg-red-100 text-red-700 hover:bg-red-200 transition"
+              >
+                Negatif
+              </button>
+            </div>
+          </div>
+
+          <!-- Siswa 1 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=11"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Andi</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-green-600 font-bold">75 Poin</span>
+          </div>
+
+          <!-- Siswa 2 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=16"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Rizky</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-red-600 font-bold">30 Poin</span>
+          </div>
+          
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=11"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Andi</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-green-600 font-bold">75 Poin</span>
+          </div>
+
+          <!-- Siswa 2 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=16"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Rizky</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-red-600 font-bold">30 Poin</span>
+          </div>
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=11"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Andi</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-green-600 font-bold">75 Poin</span>
+          </div>
+
+          <!-- Siswa 2 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=16"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Rizky</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-red-600 font-bold">30 Poin</span>
+          </div>
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=11"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Andi</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-green-600 font-bold">75 Poin</span>
+          </div>
+
+          <!-- Siswa 2 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=16"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Rizky</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-red-600 font-bold">30 Poin</span>
+          </div>
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=11"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Andi</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-green-600 font-bold">75 Poin</span>
+          </div>
+
+          <!-- Siswa 2 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=16"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Rizky</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-red-600 font-bold">30 Poin</span>
+          </div>
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=11"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Andi</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-green-600 font-bold">75 Poin</span>
+          </div>
+
+          <!-- Siswa 2 -->
+          <div class="flex items-center bg-white p-3 rounded-lg shadow">
+            <img
+              src="https://i.pravatar.cc/50?img=16"
+              alt="siswa"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="ml-3 flex-1">
+              <p class="font-medium">Rizky</p>
+              <p class="text-xs text-gray-500">X-B Rekayasa Perangkat Lunak</p>
+            </div>
+            <span class="text-red-600 font-bold">30 Poin</span>
+          </div>
+        </main>
+
+        <!-- Sidebar kanan -->
+        <aside
+          class="hidden lg:block w-72 bg-white border-l p-3 overflow-y-auto"
+        >
+          <h2 class="font-semibold text-sm mb-3">
+            Peringkat Pelanggaran Per Jurusan
+          </h2>
+
+          <!-- Kategori -->
+          <div class="space-y-3">
+            <!-- Poin Positif -->
+            <div>
+              <h3 class="text-gray-700 font-semibold text-sm mb-2">
+                Poin Positif
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center bg-gray-50 p-2 rounded shadow-sm">
+                  <img
+                    src="smk.png"
+                    alt="avatar"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <p class="ml-2 text-sm flex-1">Andi</p>
+                  <span class="text-green-600 font-semibold text-xs">50</span>
+                </div>
+                <div class="flex items-center bg-gray-50 p-2 rounded shadow-sm">
+                  <img
+                    src="smk.png"
+                    alt="avatar"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <p class="ml-2 text-sm flex-1">Dinda</p>
+                  <span class="text-green-600 font-semibold text-xs">42</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poin Negatif -->
+            <div>
+              <h3 class="text-gray-700 font-semibold text-sm mb-2">
+                Poin Negatif
+              </h3>
+              <div class="space-y-2">
+                <div class="flex items-center bg-gray-50 p-2 rounded shadow-sm">
+                  <img
+                    src="smk.png"
+                    alt="avatar"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <p class="ml-2 text-sm flex-1">Rizky</p>
+                  <span class="text-red-600 font-semibold text-xs">30</span>
+                </div>
+                <div class="flex items-center bg-gray-50 p-2 rounded shadow-sm">
+                  <img
+                    src="smk.png"
+                    alt="avatar"
+                    class="w-8 h-8 rounded-full"
+                  />
+                  <p class="ml-2 text-sm flex-1">Siti</p>
+                  <span class="text-red-600 font-semibold text-xs">25</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation (hanya mobile) -->
+    <nav
+      class="fixed bottom-0 left-0 w-full bg-white border-t shadow-inner flex justify-around items-center py-2 lg:hidden z-50"
+    >
+      <!-- Beranda -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-house-fill text-xl"></i>
+        <span class="text-xs">Beranda</span>
+      </a>
+
+      <!-- Riwayat -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-bookmark-fill text-xl"></i>
+        <span class="text-xs">Riwayat</span>
+      </a>
+
+      <!-- Peringkat -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-bar-chart-fill text-xl"></i>
+        <span class="text-xs">Peringkat</span>
+      </a>
+
+      <!-- Tata Tertib -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-journal-bookmark-fill text-xl"></i>
+        <span class="text-xs">Tata Tertib</span>
+      </a>
+
+      <!-- Saya -->
+      <a
+        href="#"
+        class="flex flex-col items-center text-gray-600 hover:text-blue-600"
+      >
+        <i class="bi bi-person-fill text-xl"></i>
+        <span class="text-xs">Saya</span>
+      </a>
+    </nav>
+
+    <!-- Tombol Scroll ke Atas -->
+    <button
+      id="scrollTopBtn"
+      class="hidden fixed bottom-16 right-4 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </body>
+</html>
