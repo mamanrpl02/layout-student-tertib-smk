@@ -306,8 +306,7 @@
       </div>
     </div>
 
-    <!-- Bottom Navigation (hanya mobile) -->
-    <!-- Bottom Bar (HP) -->
+    <!-- Bottom Navigation (hanya mobile) --> 
     <nav
       class="fixed bottom-0 left-0 w-full bg-white border-t shadow-inner flex justify-around items-center py-2 lg:hidden z-50"
     >
@@ -357,36 +356,13 @@
       </a>
     </nav>
 
-    <!-- Tombol Scroll ke Atas -->
-    <!-- Tombol Scroll ke Atas -->
+    <!-- Tombol Scroll ke Atas --> 
     <button
       id="scrollTopBtn"
       class="hidden fixed bottom-16 right-4 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition"
     >
       <i class="bi bi-arrow-up"></i>
     </button>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const scrollBtn = document.getElementById("scrollTopBtn");
-
-        // cek saat scroll
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 200) {
-            scrollBtn.classList.remove("hidden");
-          } else {
-            scrollBtn.classList.add("hidden");
-          }
-        });
-
-        // klik tombol untuk scroll ke atas
-        scrollBtn.addEventListener("click", () => {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
+ 
   </body>
 </html>
