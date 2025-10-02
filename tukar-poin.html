@@ -11,15 +11,19 @@
     />
   </head>
   <body class="bg-gray-100">
+    <!-- Container utama -->
     <div class="flex flex-col h-screen">
       <!-- Topbar -->
       <header
         class="flex items-center justify-between bg-white shadow px-6 py-3"
       >
         <span class="font-bold text-lg">Tertib SMK</span>
+
         <div class="hidden md:block w-1/2">
-          <span class="font-bold text-lg">Beranda</span>
+          <span class="font-bold text-lg">Saya </span>
         </div>
+
+        <!-- Profile -->
         <div class="flex items-center gap-3">
           <span class="hidden md:block font-medium">Hello, Maman</span>
           <img
@@ -32,7 +36,7 @@
 
       <!-- Content -->
       <div class="flex flex-1 overflow-hidden">
-        <!-- Sidebar kiri -->
+        <!-- Sidebar kiri (hanya desktop) -->
         <aside
           class="hidden md:block bg-white w-64 p-4 border-r overflow-y-auto"
         >
@@ -67,65 +71,59 @@
 
         <!-- Main content -->
         <main
+          class="flex-1 overflow-y-auto p-6 space-y-4 pb-48 relative"
           id="mainContent"
-          class="flex-1 overflow-y-auto p-6 space-y-6 relative"
         >
-          <!-- Postingan 1 -->
-          <div class="bg-white rounded-lg shadow">
-            <!-- Header Post -->
-            <div class="flex items-center px-4 py-3 border-b justify-between">
-              <div class="flex items-center">
-                <img
-                  src="https://i.pravatar.cc/40?img=3"
-                  alt="user"
-                  class="w-10 h-10 rounded-full"
-                />
-                <div class="ml-3">
-                  <p class="font-semibold">A******* H****</p>
-                  <p class="text-xs text-gray-500">Jurusan RPL</p>
-                </div>
-              </div>
-              <div class="text-right">
-                <p class="text-xs text-gray-500">Rabu, 01-10-25</p>
-                <p class="text-xs text-gray-500">08:00</p>
-              </div>
+          <!-- Header -->
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold">Tukar Poin</h2>
+          </div>
+
+          <!-- Cards -->
+          <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+            <!-- Poin Positif -->
+            <div
+              class="bg-white p-4 rounded-lg shadow flex flex-col items-center"
+            >
+              <i class="bi bi-hand-thumbs-up text-2xl text-green-500"></i>
+              <p class="mt-2 font-semibold text-lg">50</p>
+              <p class="text-sm text-gray-500">Poin Positif</p>
             </div>
 
-            <!-- Gambar Post -->
-            <img
-              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="post"
-              class="w-full"
-            />
-
-            <!-- Action Buttons -->
-            <div class="px-4 py-2 border-t">
-              <div class="flex items-center justify-between">
-                <div class="flex items-center gap-4">
-                  <button
-                    class="flex items-center gap-1 text-gray-600 hover:text-red-500 transition"
-                  >
-                    <i class="bi bi-heart text-lg"></i>
-                    <span class="text-sm">Like</span>
-                  </button>
-                  <button
-                    class="flex items-center gap-1 text-gray-600 hover:text-blue-500 transition"
-                  >
-                    <i class="bi bi-share text-lg"></i>
-                    <span class="text-sm">Share</span>
-                  </button>
-                </div>
-                <!-- Jumlah Like -->
-                <p class="text-sm text-gray-500">20 Likes</p>
-              </div>
+            <!-- Poin Negatif -->
+            <div
+              class="bg-white p-4 rounded-lg shadow flex flex-col items-center"
+            >
+              <i class="bi bi-hand-thumbs-down text-2xl text-red-500"></i>
+              <p class="mt-2 font-semibold text-lg">30</p>
+              <p class="text-sm text-gray-500">Poin Negatif</p>
             </div>
+          </div>
 
-            <!-- Caption -->
-            <div class="px-4 pb-4">
-              <p class="text-sm mt-2">
-                <span class="font-semibold">Maman</span> Lagi latihan coding
-                buat project sekolah 💻🔥
+          <!-- Info + Action -->
+          <div class="px-2">
+            <div class="text mt-2">
+              <p class="text-gray-600 text-sm">
+                Setiap <span class="font-semibold">5 Poin Positif</span> dapat
+                ditukar untuk menghapus
+                <span class="font-semibold">1 Poin Negatif</span>.
               </p>
+            </div>
+
+            <!-- Button Action -->
+            <div class="action flex justify-between pt-6">
+              <a
+                href="saya.html"
+                class="bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition text-sm"
+              >
+                Kembali
+              </a>
+              <a
+                href="saya.htmls"
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition text-sm"
+              >
+                Tukarkan Poin
+              </a>
             </div>
           </div>
         </main>
@@ -137,7 +135,10 @@
           <h2 class="font-semibold text-sm mb-3">
             Peringkat Pelanggaran Per Jurusan
           </h2>
+
+          <!-- Kategori -->
           <div class="space-y-3">
+            <!-- Poin Positif -->
             <div>
               <h3 class="text-gray-700 font-semibold text-sm mb-2">
                 Poin Positif
@@ -163,6 +164,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Poin Negatif -->
             <div>
               <h3 class="text-gray-700 font-semibold text-sm mb-2">
                 Poin Negatif
@@ -193,7 +196,7 @@
       </div>
     </div>
 
-    <!-- Bottom Navigation (mobile) -->
+    <!-- Bottom Navigation (hanya mobile) -->
     <nav
       class="fixed bottom-0 left-0 w-full bg-white border-t shadow-inner flex justify-around items-center py-2 lg:hidden z-50"
     >
@@ -242,32 +245,5 @@
         <span class="text-xs">Saya</span>
       </a>
     </nav>
-
-    <!-- Tombol scroll-to-top di pojok kanan bawah layar -->
-    <button
-      id="scrollTopBtn"
-      class="hidden fixed bottom-12 right-6 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition z-50"
-    >
-      <i class="bi bi-arrow-up"></i>
-    </button>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const main = document.getElementById("mainContent");
-        const scrollBtn = document.getElementById("scrollTopBtn");
-
-        main.addEventListener("scroll", () => {
-          if (main.scrollTop > 200) {
-            scrollBtn.classList.remove("hidden");
-          } else {
-            scrollBtn.classList.add("hidden");
-          }
-        });
-
-        scrollBtn.addEventListener("click", () => {
-          main.scrollTo({ top: 0, behavior: "smooth" });
-        });
-      });
-    </script>
   </body>
 </html>
